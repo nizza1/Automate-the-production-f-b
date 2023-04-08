@@ -19,7 +19,7 @@ app.get('/api/participants',(req,res)=> {
 app.post('/api/participants/:number', (req, res) => {
     const number = parseInt(req.params.number);
     if(participants >= 100){
-        toSell += toSell +(100 *50);
+        toSell += 100 *50;
         participants = 0;
     }else{null}
     participants = participants + number;
